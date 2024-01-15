@@ -135,7 +135,7 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: false,
-      typeSpeed: 100,
+      typeSpeed: 50,
       backSpeed: 50,
       backDelay: 2000
     });
@@ -244,13 +244,15 @@
   /**
    * Animation on scroll
    */
+  
   window.addEventListener('load', () => {
     AOS.init({
-      duration: 1000,
+      duration: 500,
       easing: 'ease-in-out',
       once: true,
       mirror: false
     })
   });
+  
 
 })()
