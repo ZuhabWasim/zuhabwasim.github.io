@@ -91,12 +91,20 @@ h6
   overflow-y: auto;
 }
 
-#header .profile img
+/* #header .profile img
 {
   margin: 15px auto;
   display: block;
   width: 120px;
   border: 8px solid #2c579c;
+} */
+
+#header .profile img
+{
+  margin: 15px auto;
+  display: block;
+  width: 150px;
+  /* border: 8px solid #2c579c; */
 }
 
 #header .profile h1
