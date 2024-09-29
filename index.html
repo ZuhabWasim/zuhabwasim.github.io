@@ -1,658 +1,862 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Zuhab Wasim</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Zuhab Wasim</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/ico" sizes="48x48" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+    <link rel="manifest" href="assets/img/site.webmanifest" />
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/ico" sizes="48x48" href="assets/img/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/site.webmanifest">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: iPortfolio - v3.7.0
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/logo/logo-no-bg.png" alt="" class="img-fluid">
-        <h1 class="text-light"><a href="index.html">Zuhab Wasim</a></h1>
-        <div class="social-links mt-3 text-center">
-
-          <a target="_blank" href="./assets/files/resume_visual.pdf" class="resume"><i class="bx bxs-file"></i></a>
-          <a target="_blank" href="./assets/files/resume_game_dev.pdf" class="resume"><i
-              class="bx bxs-joystick"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/zuhabwasim/" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-          <a target="_blank" href="https://zauhd.itch.io/" class="linkedin"><i class="bx bxl-unity"></i></a>
-          <a target="_blank" href="https://github.com/ZuhabWasim" class="linkedin"><i class="bx bxl-github"></i></a>
-
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <!--<li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>-->
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-              <span>Portfolio</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-terminal"></i> <span>Skills</span></a></li>
-          <li><a href="#tools" class="nav-link scrollto"><i class="bx bx-bot"></i> <span>Tools</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-book-bookmark"></i> <span>Courses</span></a>
-          </li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file"></i> <span>Resume</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-paper-plane"></i> <span>Contact</span></a>
-          </li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Zuhab Wasim</h1>
-      <p><span class="typed" data-typed-items="Software Developer"></span></p>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Welcome to my e-portfolio!</h2>
-          <p>
-            I'm 24 years old and a graduate from the University of Toronto for Computer Science.
-            <br><br>
-            I've grown up in Toronto since I immigrated at the age of one and have been exploring this city ever since.
-            I'm really excited to share my knowledge and enthusiasm for programming in this vigorous city!
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img-full.jpg" class="img-fluid" alt="">
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <img src="assets/img/logo/logo-no-bg.png" alt="" class="img-fluid" />
+          <h1 class="text-light"><a href="index.html">Zuhab Wasim</a></h1>
+          <div class="social-links mt-3 text-center">
+            <a target="_blank" href="./assets/files/resume_general.pdf" class="resume"
+              ><i class="bx bxs-file"></i
+            ></a>
+            <a target="_blank" href="./assets/files/resume_game_dev.pdf" class="resume"
+              ><i class="bx bxs-joystick"></i
+            ></a>
+            <a target="_blank" href="https://www.linkedin.com/in/zuhabwasim/" class="linkedin"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a target="_blank" href="https://zauhd.itch.io/" class="linkedin"
+              ><i class="bx bxl-unity"></i
+            ></a>
+            <a target="_blank" href="https://github.com/ZuhabWasim" class="linkedin"
+              ><i class="bx bxl-github"></i
+            ></a>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Information</h3>
-            <p class="fst-italic">
-              My contributions in programming have included back-end, front-end, full-stack and UI/UX Design while I
-              passionately develop games, and music on the side.
-            </p>
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <!--<li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>-->
+            <li>
+              <a href="#about" class="nav-link scrollto"
+                ><i class="bx bx-user"></i> <span>About</span></a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-link scrollto"
+                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a href="#resume" class="nav-link scrollto"
+                ><i class="bx bx-file"></i> <span>Resume</span></a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="nav-link scrollto"
+                ><i class="bx bx-terminal"></i> <span>Skills</span></a
+              >
+            </li>
+            <li>
+              <a href="#tools" class="nav-link scrollto"
+                ><i class="bx bx-bot"></i> <span>Tools</span></a
+              >
+            </li>
+            <li>
+              <a href="#services" class="nav-link scrollto"
+                ><i class="bx bx-book-bookmark"></i> <span>Courses</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link scrollto"
+                ><i class="bx bx-paper-plane"></i> <span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <div class="hero-container" data-aos="fade-in">
+        <h1>Zuhab Wasim</h1>
+        <p><span class="typed" data-typed-items="Software Developer"></span></p>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>Hello!</h2>
             <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(416) 302-8451</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>School:</strong> <span>University of Toronto</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>zuhab.wasim@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Honours Bachelor's Computer
-                      Science</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              Feel free to check out my projects and games as I continue to hone my skills in this ever-changing field
-              of technology and science!
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- End About Section -->
-
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Apps</li>
-              <li data-filter=".filter-game">Games</li>
-              <li data-filter=".filter-web">Websites</li>
-              <li data-filter=".filter-project">Projects</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <!-- Reflection -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/reflection.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="https://zuhab.itch.io/reflection" title="More Details"><span>A narrative/story
-                    campaign about a women coming to terms with her parent's divorce.
-                    <hr> <b>Unity, C#</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Woodland Woes -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/woodlandwoes.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="https://jimmytan.itch.io/woodland-woes" title="More Details"><span>Travel
-                    through an Ōkami-like world and help animal guardians retake their land from corruption.
-                    <hr> <b>Unity, C#</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Lighter Souls -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-game">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/lightersouls.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="https://zuhab.itch.io/lightersouls" title="More Details"><span>A metroid-vania
-                    platformer where your goal is to lose all the armour you've obtained.
-                    <hr> <b>Unity, C#</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!--Speech Chess-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/speechchess.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="https://github.com/alexzquach/HackTheNorth2019"
-                  title="More Details"><span>Voice automated chess made for Hack the North 2019.
-                    <hr> <b>Python, Azure AI</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!--Communipay-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/communipay.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="https://github.com/ZuhabWasim/uofthacks"
-                  title="More Details"><span>Then-innovative take on splitting the bill for e-transfers.
-                    <hr> <b>Python, Java, Android, Interac API</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!--Chalmers Cards-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/chalmerscards.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="https://github.com/csc301-fall-2019/team-project-chalmer-s-cards"
-                  title="More Details"><span>An image-detection software tracking ingoing and outgoing traffic of people
-                    at homeless shelters.
-                    <hr> <b>Python, Open CV Custom Vision</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!--Skinmergency-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/skinmergency.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="https://github.com/alexzquach/DeltaHacksV"
-                  title="More Details"><span>Award-winning Healthcare App that detects 10 different skin diseases using
-                    your camera. Made for Delta Hacks 2019
-                    <hr> <b>Java, Android, Azure AI</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!--Neighbourly-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/neighbourly.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="https://github.com/alexzquach/Neighbourly-team400iq"
-                  title="More Details"><span>A reddit-like website for neighbours to connect their help through
-                    volunteering or aid-seeking posts.
-                    <hr> <b>Python, Mongo DB, React.JS, Node.JS</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!--Game Centre-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/gamecentre.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="https://github.com/ZuhabWasim/GameCentre" title="More Details"><span>An Android
-                    game hub app with player login and leaderboards using local serialization.
-                    <hr> <b>Java, Android, Unit Testing</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!--Robotics-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/robotics.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="http://riverdalerobotics.com/" title="More Details"><span>Robotics team that
-                    engineered and programmed robots to compete internationally.
-                    <hr> <b>Java, Eclipse, Systems</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!--Nize and Drive-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/nizeanddrive.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="http://nizeanddrive.1apps.com/" title="More Details"><span>An online driving
-                    test educator to help with the G1 driving test, with user login and leaderboards.
-                    <hr> <b>HTML, CSS, ASP, VBScript, SQL</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-
-          <!--Algorithms and Challenges-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/algorithms.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a target="_blank" href="https://github.com/ZuhabWasim/AlgorithmsAndChallenge"
-                  title="More Details"><span>A side-project to implement and study algorithms and data structures in
-                    high school.
-                    <hr> <b>Java, Algorithms</b>
-                  </span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p></p>
-        </div>
-
-        <div class="row skills-content">
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Python<i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+              <div class="col-lg-8">
+                <div class="content">
+                  My name is <b>Zuhab Wasim</b> and I'm a graduate of the
+                  <b>University of Toronto</b> for Computer Science.
+                  <br />
+                  <br />
+                  I'm striving to break into the tech industry as a <span>Software Engineer</span>.
+                  I'm driven, passionate, and versatile with a good background in technical
+                  development, project management and support/analysis.
+                  <br />
+                  <br />
+                  My skillset includes <span>full-stack engineering</span>, <span>databases</span>,
+                  <span>techincal support</span>, <span>UI/UX Design</span>, and
+                  <span>game development</span>.
+                  <br />
+                  <br />
+                  I value being <b>meticulous</b> and <b>resourceful</b>, leveraging my skills to
+                  solve problems and drive innovation. I look forward to applying my experience and
+                  enthusiasm to new challenges and opportunities.
+                  <br />
+                  <br />
+                  My hobbies are star gazing, developing video games, playing piano, and going on
+                  wonderful dates with my partner.
                 </div>
               </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Java<i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
+              <div class="col-lg-4">
+                <img src="assets/img/profile-img-full.jpg" class="profile-img" alt="" />
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill">C#<i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">SQL, ASP <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML, CSS, React.JS <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Visual BASIC, VBScript <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">C <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Ruby <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Skills Section -->
-
-    <!-- ======= Tools Section ======= -->
-    <section id="tools" class="facts">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Tools</h2>
-          <p></p>
-        </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-2 col-md-3">
-            <p style="text-align: center;">
-              <img class="bx" style="padding: 0px 0px 20px 0px;width:75px;" src="./assets/img/icons/amazon.png"><br>
-              <strong>AWS</strong>
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-3">
-            <p style="text-align: center;">
-              <img class="bx" style="padding: 0px 0px 20px 0px;width:75px;" src="./assets/img/icons/unity.png"><br>
-              <strong>Unity</strong>
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-3">
-            <p style="text-align: center;">
-              <img class="bx" style="padding: 0px 0px 20px 0px;width:75px;" src="./assets/img/icons/postgres.png"><br>
-              <strong>Postgres</strong>
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-3">
-            <p style="text-align: center;">
-              <img class="bx" style="padding: 0px 0px 20px 0px;width:75px;"
-                src="./assets/img/icons/androidstudio.png"><br>
-              <strong>Android Studio</strong>
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-3">
-            <p style="text-align: center;">
-              <img class="bx" style="padding: 0px 0px 20px 0px;width:75px;" src="./assets/img/icons/pytorch.png"><br>
-              <strong>PyTorch</strong>
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-3">
-            <p style="text-align: center;">
-              <img class="bx" style="padding: 0px 0px 20px 0px;width:75px;" src="./assets/img/icons/tensorflow.png"><br>
-              <strong>Tensorflow</strong>
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-3">
-            <p style="text-align: center;">
-              <img class="bx" style="padding: 0px 0px 20px 0px;width:75px;" src="./assets/img/icons/react.png"><br>
-              <strong>React JS</strong>
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-3">
-            <p style="text-align: center;">
-              <img class="bx" style="padding: 0px 0px 20px 0px;width:75px;" src="./assets/img/icons/xcode.png"><br>
-              <strong>Xcode</strong>
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-3">
-            <p style="text-align: center;">
-              <img class="bx" style="padding: 0px 0px 20px 0px;width:75px;"
-                src="./assets/img/icons/rubyonrails.png"><br>
-              <strong>Ruby on Rails</strong>
-            </p>
-          </div>
-          <div class="col-lg-2 col-md-3">
-            <p style="text-align: center;">
-              <img class="bx" style="padding: 0px 0px 20px 0px;width:75px;" src="./assets/img/icons/mongodb.png"><br>
-              <strong>Mongo DB</strong>
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- End Tools Section -->
-
-    <!-- ======= Services (Courses) Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Courses</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box">
-            <div class="icon"><i class="bx bxl-unity"></i></div>
-            <h4 class="title">CSC404 - Video Game Design</h4>
-            <p class="description">Valuable in team building, cooperated with a team of 10 to make a full
-              narrative/story-based game from scratch in 3 months.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="100">
-            <div class="icon"><i class="bx bxs-detail"></i></div>
-            <h4 class="title">CSC401 - Natural Language Processing</h4>
-            <p class="description">Implemented and studied numerous methods to process human language to aggregate data
-              and trends.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="200">
-            <div class="icon"><i class="bx bx-data"></i></div>
-            <h4 class="title">CSC343 - Intro to Databases</h4>
-            <p class="description">Learned relational algebra and querying databases with Postgres SQL and Java.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="300">
-            <div class="icon"><i class="bx bx-ghost"></i></div>
-            <h4 class="title">CSC384 - Intro to Artificial Intelligence</h4>
-            <p class="description">Learned search algorithms, constraint satisfaction problems, and Baynesian networks
-              to code basic AI for various games.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="500">
-            <div class="icon"><i class="bx bx-code-alt"></i></div>
-            <h4 class="title">CSC309 - Programming on the Web</h4>
-            <p class="description">Coded a website from scratch using native React JS and implemented a Mongo DB Backend
-              in Python.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="400">
-            <div class="icon"><i class="bx bxs-terminal"></i></div>
-            <h4 class="title">CSC258 - Computer Organization</h4>
-            <p class="description">Coded a computer processor using Verilog to better understand low-level programming
-              and machine language. </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- End Services (Courses) Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <embed id="resume" src="./assets/files/resume_visual.pdf" type="application/pdf" width="100%" height="1000px"
-            class="hidden">
-        </div>
-        <div class="row">
-
-        </div>
-    </section>
-    <!-- End Resume Section -->
-
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p></p>
-        </div>
-
-        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form action="https://formspree.io/f/xdobvrav" method="post" role="form" class="php-email-form">
             <div class="row">
-              <div class="form-group col-md-6">
-                <label for="name">Your Name</label>
-                <input type="text" name="name" class="form-control" id="name" required>
+              <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>Information</h3>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul>
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>Phone:</strong> (416) 302-8451
+                      </li>
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>School:</strong> University of Toronto
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul>
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>Email:</strong> zuhab.wasim@gmail.com
+                      </li>
+                      <li>
+                        <i class="bi bi-chevron-right"></i>
+                        <strong>Degree:</strong> Honours BSc of Computer Science
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="form-group col-md-6">
-                <label for="name">Your Email</label>
-                <input type="email" class="form-control" name="email" id="email" required>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p></p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">Apps</li>
+                <li data-filter=".filter-game">Games</li>
+                <li data-filter=".filter-web">Websites</li>
+                <li data-filter=".filter-project">Projects</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row portfolio-container">
+            <!-- Reflection -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/reflection.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://zuhab.itch.io/reflection" title="More Details"
+                    ><span
+                      >A narrative/story campaign about a women coming to terms with her parent's
+                      divorce.
+                      <hr />
+                      <b>Unity, C#</b>
+                    </span></a
+                  >
+                </div>
               </div>
             </div>
-            <div class="form-group">
-              <label for="name">Subject</label>
-              <input type="text" class="form-control" name="subject" id="subject" required>
+
+            <!-- Woodland Woes -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/woodlandwoes.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    target="_blank"
+                    href="https://jimmytan.itch.io/woodland-woes"
+                    title="More Details"
+                    ><span
+                      >Travel through an Ōkami-like world and help animal guardians retake their
+                      land from corruption.
+                      <hr />
+                      <b>Unity, C#</b>
+                    </span></a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="name">Message</label>
-              <textarea class="form-control" name="message" rows="10" required></textarea>
+
+            <!-- Lighter Souls -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/lightersouls.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://zuhab.itch.io/lightersouls" title="More Details"
+                    ><span
+                      >A metroid-vania platformer where your goal is to lose all the armour you've
+                      obtained.
+                      <hr />
+                      <b>Unity, C#</b>
+                    </span></a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+            <!--Speech Chess-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/speechchess.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/alexzquach/HackTheNorth2019"
+                    title="More Details"
+                    ><span
+                      >Voice automated chess made for Hack the North 2019.
+                      <hr />
+                      <b>Python, Azure AI</b>
+                    </span></a
+                  >
+                </div>
+              </div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
+
+            <!--Communipay-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/communipay.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ZuhabWasim/uofthacks"
+                    title="More Details"
+                    ><span
+                      >Then-innovative take on splitting the bill for e-transfers.
+                      <hr />
+                      <b>Python, Java, Android, Interac API</b>
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Chalmers Cards-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/chalmerscards.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/csc301-fall-2019/team-project-chalmer-s-cards"
+                    title="More Details"
+                    ><span
+                      >An image-detection software tracking ingoing and outgoing traffic of people
+                      at homeless shelters.
+                      <hr />
+                      <b>Python, Open CV Custom Vision</b>
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Skinmergency-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/skinmergency.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/alexzquach/DeltaHacksV"
+                    title="More Details"
+                    ><span
+                      >Award-winning Healthcare App that detects 10 different skin diseases using
+                      your camera. Made for Delta Hacks 2019
+                      <hr />
+                      <b>Java, Android, Azure AI</b>
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Neighbourly-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/neighbourly.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/alexzquach/Neighbourly-team400iq"
+                    title="More Details"
+                    ><span
+                      >A reddit-like website for neighbours to connect their help through
+                      volunteering or aid-seeking posts.
+                      <hr />
+                      <b>Python, Mongo DB, React.JS, Node.JS</b>
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Game Centre-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/gamecentre.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ZuhabWasim/GameCentre"
+                    title="More Details"
+                    ><span
+                      >An Android game hub app with player login and leaderboards using local
+                      serialization.
+                      <hr />
+                      <b>Java, Android, Unit Testing</b>
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Robotics-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/robotics.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a target="_blank" href="http://riverdalerobotics.com/" title="More Details"
+                    ><span
+                      >Robotics team that engineered and programmed robots to compete
+                      internationally.
+                      <hr />
+                      <b>Java, Eclipse, Systems</b>
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Nize and Drive-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/nizeanddrive.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a target="_blank" href="http://nizeanddrive.1apps.com/" title="More Details"
+                    ><span
+                      >An online driving test educator to help with the G1 driving test, with user
+                      login and leaderboards.
+                      <hr />
+                      <b>HTML, CSS, ASP, VBScript, SQL</b>
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!--Algorithms and Challenges-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/algorithms.jpg" class="img-fluid" alt="" />
+                <div class="portfolio-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ZuhabWasim/AlgorithmsAndChallenge"
+                    title="More Details"
+                    ><span
+                      >A side-project to implement and study algorithms and data structures in high
+                      school.
+                      <hr />
+                      <b>Java, Algorithms</b>
+                    </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- End Portfolio Section -->
 
-      </div>
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container">
+          <div class="section-title">
+            <h2>Resume</h2>
+            <p></p>
+          </div>
 
-      </div>
-    </section>
-    <!-- End Contact Section -->
-
-    <!-- ======= Facts Section (Used as Footer) ======= -->
-
-    <section id="facts" class="facts" style="padding: 10px 10px 7px 10px;">
-      <div class="container"
-        style="margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; font-size: 10px; display: inline; text-align: center;">
-        <div class="copyright">
-          &copy; Copyright <strong><span>iPortfolio</span></strong>
+          <div class="row">
+            <embed
+              id="resume"
+              src="./assets/files/resume_general.pdf"
+              type="application/pdf"
+              width="100%"
+              height="1000px"
+              class="hidden"
+            />
+          </div>
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </section>
+      <!-- End Resume Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Skills</h2>
+            <p></p>
+          </div>
+
+          <div class="row skills-content">
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill">Python<i class="val"></i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Java<i class="val"></i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">C#<i class="val"></i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">SQL, ASP <i class="val"></i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="progress">
+                <span class="skill">HTML, CSS, React.JS <i class="val"></i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Visual BASIC, VBScript <i class="val"></i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="55"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">C <i class="val"></i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Ruby <i class="val"></i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="35"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- End Facts Section -->
+      </section>
+      <!-- End Skills Section -->
 
-  </main>
-  <!-- End #main -->
+      <!-- ======= Tools Section ======= -->
+      <section id="tools" class="facts">
+        <div class="container">
+          <div class="section-title">
+            <h2>Tools</h2>
+            <p></p>
+          </div>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+          <div class="row no-gutters">
+            <div class="col-lg-2 col-md-3">
+              <p style="text-align: center">
+                <img
+                  class="bx"
+                  style="padding: 0px 0px 20px 0px; width: 75px"
+                  src="./assets/img/icons/amazon.png"
+                /><br />
+                <strong>AWS</strong>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+              <p style="text-align: center">
+                <img
+                  class="bx"
+                  style="padding: 0px 0px 20px 0px; width: 75px"
+                  src="./assets/img/icons/unity.png"
+                /><br />
+                <strong>Unity</strong>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+              <p style="text-align: center">
+                <img
+                  class="bx"
+                  style="padding: 0px 0px 20px 0px; width: 75px"
+                  src="./assets/img/icons/postgres.png"
+                /><br />
+                <strong>Postgres</strong>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+              <p style="text-align: center">
+                <img
+                  class="bx"
+                  style="padding: 0px 0px 20px 0px; width: 75px"
+                  src="./assets/img/icons/androidstudio.png"
+                /><br />
+                <strong>Android Studio</strong>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+              <p style="text-align: center">
+                <img
+                  class="bx"
+                  style="padding: 0px 0px 20px 0px; width: 75px"
+                  src="./assets/img/icons/pytorch.png"
+                /><br />
+                <strong>PyTorch</strong>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+              <p style="text-align: center">
+                <img
+                  class="bx"
+                  style="padding: 0px 0px 20px 0px; width: 75px"
+                  src="./assets/img/icons/tensorflow.png"
+                /><br />
+                <strong>Tensorflow</strong>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+              <p style="text-align: center">
+                <img
+                  class="bx"
+                  style="padding: 0px 0px 20px 0px; width: 75px"
+                  src="./assets/img/icons/react.png"
+                /><br />
+                <strong>React JS</strong>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+              <p style="text-align: center">
+                <img
+                  class="bx"
+                  style="padding: 0px 0px 20px 0px; width: 75px"
+                  src="./assets/img/icons/xcode.png"
+                /><br />
+                <strong>Xcode</strong>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+              <p style="text-align: center">
+                <img
+                  class="bx"
+                  style="padding: 0px 0px 20px 0px; width: 75px"
+                  src="./assets/img/icons/rubyonrails.png"
+                /><br />
+                <strong>Ruby on Rails</strong>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-3">
+              <p style="text-align: center">
+                <img
+                  class="bx"
+                  style="padding: 0px 0px 20px 0px; width: 75px"
+                  src="./assets/img/icons/mongodb.png"
+                /><br />
+                <strong>Mongo DB</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Tools Section -->
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+      <!-- ======= Services (Courses) Section ======= -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title">
+            <h2>Courses</h2>
+            <p></p>
+          </div>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 icon-box">
+              <div class="icon"><i class="bx bxl-unity"></i></div>
+              <h4 class="title">CSC404 - Video Game Design</h4>
+              <p class="description">
+                Valuable in team building, cooperated with a team of 10 to make a full
+                narrative/story-based game from scratch in 3 months.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="100">
+              <div class="icon"><i class="bx bxs-detail"></i></div>
+              <h4 class="title">CSC401 - Natural Language Processing</h4>
+              <p class="description">
+                Implemented and studied numerous methods to process human language to aggregate data
+                and trends.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-data"></i></div>
+              <h4 class="title">CSC343 - Intro to Databases</h4>
+              <p class="description">
+                Learned relational algebra and querying databases with Postgres SQL and Java.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-ghost"></i></div>
+              <h4 class="title">CSC384 - Intro to Artificial Intelligence</h4>
+              <p class="description">
+                Learned search algorithms, constraint satisfaction problems, and Baynesian networks
+                to code basic AI for various games.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="500">
+              <div class="icon"><i class="bx bx-code-alt"></i></div>
+              <h4 class="title">CSC309 - Programming on the Web</h4>
+              <p class="description">
+                Coded a website from scratch using native React JS and implemented a Mongo DB
+                Backend in Python.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos-delay="400">
+              <div class="icon"><i class="bx bxs-terminal"></i></div>
+              <h4 class="title">CSC258 - Computer Organization</h4>
+              <p class="description">
+                Coded a computer processor using Verilog to better understand low-level programming
+                and machine language.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services (Courses) Section -->
 
-</body>
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p></p>
+          </div>
 
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form
+              action="https://formspree.io/f/xdobvrav"
+              method="post"
+              role="form"
+              class="php-email-form"
+            >
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+
+      <!-- ======= Facts Section (Used as Footer) ======= -->
+
+      <section id="copyright" class="facts" style="padding: 10px 10px 7px 10px">
+        <div
+          class="container"
+          style="
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            font-size: 10px;
+            display: inline;
+            text-align: center;
+          "
+        >
+          <div class="copyright">
+            &copy; Copyright <strong><span>iPortfolio</span></strong>
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </section>
+      <!-- End Facts Section -->
+    </main>
+    <!-- End #main -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
