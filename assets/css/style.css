@@ -32,6 +32,12 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -235,15 +241,16 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 20vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.4);
   position: absolute;
+  height: 20vh;
   bottom: 0;
   top: 0;
   left: 0;
@@ -384,7 +391,7 @@ section {
 }
 
 .about .profile-img {
-  height: 18em;
+  height: 20em;
   float: right;
   display: block;
 }
@@ -394,7 +401,7 @@ section {
 --------------------------------------------------------------*/
 
 .facts {
-  background: #ffffff;
+  background: #f5f8fd;
 }
 
 #copyright {
@@ -449,46 +456,131 @@ section {
   color: #1f5297;
 }
 
+/* .facts .bx {
+  display: inline;
+  color: #1f5297;
+} */
+
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
 
-.skills {
-  background: #f5f8fd;
+/* ===== SKILL BADGES (auto-width, no lift, hover lighten) ===== */
+
+/* Container: flex with wrapping */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+/* Individual badge: auto width based on content */
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  height: 44px;
+  border-radius: 8px;
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  cursor: default;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
+/* Hover: subtle color lighten */
+.skill-badge:hover,
+.skill-badge:focus {
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+  transform: none;
+  outline: none;
+}
+
+/* Logo container */
+.skill-badge .logo {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+/* Logo image */
+.skill-badge .logo img {
+  max-width: 20px;
+  max-height: 20px;
   display: block;
+}
+
+/* Label text */
+.skill-badge .label {
+  color: #ffffff;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
+  font-size: 14px;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 10px;
-}
-
-.skills .progress-bar {
-  /* width: 1px; */
-  height: 10px;
-  /* transition: 0.9s; */
+/* Solid blue variants */
+.skill-badge.variant-frontend {
+  background-color: #4975be;
+} /* bright blue */
+.skill-badge.variant-backend {
   background-color: #2c579c;
+} /* darker navy */
+.skill-badge.variant-tools {
+  background-color: #4975be;
+} /* deep blue */
+
+/* Hover lighten for each variant */
+.skill-badge.variant-frontend:hover {
+  background-color: #5483cf;
+}
+.skill-badge.variant-backend:hover {
+  background-color: #4776c2;
+}
+.skill-badge.variant-tools:hover {
+  background-color: #6f9de6;
+}
+
+/* Small-screen tweaks */
+@media (max-width: 480px) {
+  .skill-badge {
+    padding: 8px 10px;
+    height: 40px;
+    gap: 8px;
+  }
+  .skill-badge .label {
+    font-size: 13px;
+  }
+  .skill-badge .logo {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Light theme fallback */
+@media (prefers-color-scheme: light) {
+  .skill-badge {
+    color: #0f172a;
+    border: 1px solid rgba(16, 24, 40, 0.06);
+  }
+  .skill-badge .logo {
+    background: rgba(0, 0, 0, 0.02);
+  }
 }
 
 /*--------------------------------------------------------------
@@ -718,10 +810,7 @@ section {
   position: relative;
 }
 
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -729,10 +818,7 @@ section {
   border: 1px solid #4975be;
 }
 
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #4975be;
 }
 
