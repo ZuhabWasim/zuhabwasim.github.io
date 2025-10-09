@@ -356,15 +356,63 @@ section {
   font-size: 26px;
   color: #173b6c;
 }
-
-.about .content span {
-  color: #173566;
-  /* color: #173b6c; */
-  background-color: rgb(206, 221, 245);
-  border-radius: 6px 6px 0 0;
-  padding: 0.1em 0.1em 0.1em 0.1em;
+/***********************/
+/* improved keyword highlight (replace your .about .content span rule) */
+:root {
+  --hl-bg: #cfe0f8; /* light background */
+  --hl-fg: #0e2b55; /* foreground / text */
+  --hl-border: rgba(16, 36, 74, 0.08);
+  --hl-shadow: 0 6px 18px rgba(5, 13, 24, 0.06);
+  --hl-radius: 8px;
 }
 
+/* default highlight */
+.about .content span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35ch;
+  padding: 0.12em 0.5em; /* a little wider for readability */
+  font-weight: 600; /* stronger emphasis */
+  font-size: 0.95em;
+  line-height: 1;
+  color: var(--hl-fg);
+  background-color: var(--hl-bg);
+  border: 1px solid var(--hl-border);
+  border-radius: var(--hl-radius);
+  box-shadow: var(--hl-shadow);
+  white-space: nowrap;
+  vertical-align: middle;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+}
+
+/* hover & focus for interactive feel and keyboard users */
+.about .content span:hover,
+.about .content span:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(5, 13, 24, 0.1);
+  outline: none;
+  background-color: color-mix(in srgb, var(--hl-bg) 75%, white); /* subtle lighten */
+}
+
+/* make highlights keyboard-focusable if you want them to be interactive:
+   add tabindex="0" to the span element in HTML (optional) */
+.about .content span[tabindex="0"] {
+  cursor: pointer;
+}
+.about .content span[tabindex="0"]:focus {
+  box-shadow: 0 0 0 4px rgba(73, 117, 190, 0.12); /* visible focus ring */
+}
+
+/* compact (inline) variant if you prefer a smaller pill */
+.about .content span.variant-compact {
+  padding: 0.08em 0.35em;
+  font-weight: 600;
+  font-size: 0.9em;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+/*************************/
 .about .content ul {
   list-style: none;
   padding: 0;
