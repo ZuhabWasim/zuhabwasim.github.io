@@ -7,7 +7,6 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 (function () {
   "use strict";
 
-  print("using waypoints");
   var keyCounter = 0;
   var allWaypoints = {};
 
