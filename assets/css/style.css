@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #1c386a;
+  height: 100%;
 }
 
 a {
@@ -274,7 +275,7 @@ h3 {
 
 #hero p {
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
@@ -357,9 +358,9 @@ section {
 }
 
 .about .content span {
-  color: #2c579c;
+  color: #173566;
   /* color: #173b6c; */
-  background-color: rgb(235, 243, 255);
+  background-color: rgb(206, 221, 245);
   border-radius: 6px 6px 0 0;
   padding: 0.1em 0.1em 0.1em 0.1em;
 }
@@ -1281,5 +1282,125 @@ section {
     position: static;
     width: auto;
     padding-right: 20px 15px;
+  }
+}
+
+/* Amendment */
+/* -------------------------
+   Global fixed blurred background
+   ------------------------- */
+.site-bg {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  z-index: 0; /* behind everything */
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* keeps it static */
+  filter: blur(8px) saturate(1.05);
+  transform: scale(1.02); /* avoid edges showing when blurred */
+  pointer-events: none; /* allow clicks through the bg */
+  will-change: transform, filter;
+}
+
+/* Add a subtle dark overlay for contrast */
+.site-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 10, 20, 0.28); /* tweak darkness */
+  pointer-events: none;
+}
+
+/* Ensure the rest of page content sits above the bg */
+#main,
+#hero,
+.section-card {
+  position: relative;
+  z-index: 2;
+}
+
+/* ----- Section cards ----- */
+/* Make each section content appear as a rounded card */
+section .container > .section-card {
+  background: rgba(255, 255, 255, 0.92); /* slightly translucent white */
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(5, 13, 24, 0.12);
+  margin-bottom: 32px; /* spacing between cards */
+  backdrop-filter: blur(2px); /* subtle glass effect on supporting browsers */
+}
+
+/* Override existing section-bg which currently paints entire strip */
+section.section-bg,
+.facts,
+.about,
+.resume,
+.portfolio,
+.contact {
+  background: transparent !important; /* allow background to show through */
+  padding-top: 36px; /* keep spacing; outer section still provides top padding */
+  padding-bottom: 36px;
+}
+
+/* Keep section titles consistent visually on card */
+.section-title {
+  margin-bottom: 16px;
+}
+.section-title h2 {
+  background: transparent;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Hero tweaks: keep hero text crisp on top of blurred bg */
+#hero {
+  background: transparent !important; /* background now comes from .site-bg */
+  height: 36vh; /* increase hero height slightly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero:before {
+  display: none;
+} /* remove old overlay pseudo */
+
+/* Make hero container stand out: small translucent card */
+#hero .hero-container {
+  background: rgba(3, 7, 17, 0.48);
+  padding: 28px 36px;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(5, 13, 24, 0.32);
+}
+
+/* Keep text white and readable */
+#hero h1,
+#hero p {
+  color: #fff;
+  z-index: 3;
+}
+
+/* Responsive: smaller padding on mobile */
+@media (max-width: 991px) {
+  .site-bg {
+    filter: blur(6px);
+  }
+  section .container > .section-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+  #hero {
+    height: 28vh;
+  }
+}
+
+/* Accessibility: reduce blur for reduced-motion users */
+@media (prefers-reduced-motion: reduce) {
+  .site-bg {
+    filter: none;
+    transform: none;
+  }
+  .site-bg::after {
+    background: rgba(5, 10, 20, 0.32);
   }
 }
