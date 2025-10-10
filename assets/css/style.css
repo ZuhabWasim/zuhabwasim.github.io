@@ -75,7 +75,11 @@ h3 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+:root {
+  --sidebar-w: 300px;
+}
 #header {
+  width: var(--sidebar-w);
   position: fixed;
   top: 0;
   left: 0;
@@ -245,6 +249,16 @@ h3 {
   height: 20vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
+  margin-left: var(--sidebar-w);
+  width: calc(100% - var(--sidebar-w));
+  /* keep your existing hero styling */
+  background: transparent !important;
+  height: 36vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* keeps stacking context correct */
+  z-index: 2;
 }
 
 #hero:before {
@@ -305,7 +319,12 @@ h3 {
     margin-bottom: 30px;
   }
 }
-
+@media (max-width: 1199px) {
+  #hero {
+    margin-left: 0;
+    width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -1415,7 +1434,7 @@ section.section-bg,
 /* Make hero container stand out: small translucent card */
 #hero .hero-container {
   background: rgba(3, 7, 17, 0.48);
-  padding: 28px 36px;
+  padding: 28px;
   border-radius: 12px;
   box-shadow: 0 12px 40px rgba(5, 13, 24, 0.32);
 }
